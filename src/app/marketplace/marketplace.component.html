@@ -1,4 +1,6 @@
 <h2>Marketplace</h2>
-<p>
-  All our fine Kidz Bop Death Propeganda™:
-</p>
+<p>All our fine Kidz Bop Death Propeganda™:</p>
+
+<div *ngFor="let album of albums" (click)="goToDetailPage(album)" class="panel panel-default">
+  <h3><em>{{album.title}}</em> by {{album.artist}}</h3>
+</div>
